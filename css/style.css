@@ -81,6 +81,9 @@ header nav ul li a {
   .logo img {
     height: 1.2rem; } }
 
+.about {
+  background: #14181D; }
+
 .briefing {
   text-align: center;
   height: 70vh;
@@ -96,10 +99,10 @@ header nav ul li a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px; }
+    gap: 2rem; }
     @media (max-width: 75em) {
       .briefing__text {
-        font-size: 12px; } }
+        font-size: 1.2rem; } }
   .briefing__text p {
     font-size: 1.8rem;
     color: #fff; }
@@ -123,7 +126,49 @@ header nav ul li a {
 
 .development {
   height: 40vh;
-  background: #14181D; }
+  background: #14181D;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 56.25em) {
+    .development {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 170vh; } }
+  .development__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15rem; }
+    @media (max-width: 56.25em) {
+      .development__content {
+        display: flex;
+        flex-direction: column;
+        height: 100vh; } }
+  .development__briefing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; }
+  .development__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem; }
+  .development__text p {
+    color: #8D8D8D;
+    font-size: 1.6rem; }
+
+@media (max-width: 56.25em) {
+  .b {
+    position: relative;
+    left: 0.8rem; } }
+
+@media (max-width: 56.25em) {
+  .c {
+    position: relative;
+    right: 3.4rem; } }
 
 .header {
   background-image: url(../img/homebg.png);
