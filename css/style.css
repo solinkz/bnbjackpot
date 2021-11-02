@@ -41,6 +41,9 @@ h3 {
   color: #fff;
   font-weight: 400; }
 
+.container {
+  padding: 3.1rem 10.2rem; }
+
 .btn__nav {
   border-radius: 16px;
   border: 1px solid #FFD231;
@@ -124,4 +127,8 @@ header nav ul li a {
 
 .header {
   background-image: url(../img/homebg.png);
+  height: 90vh; }
+
+.header2 {
+  background-image: url(../img/loginbg.png);
   height: 90vh; }
