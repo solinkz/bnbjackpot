@@ -1,3 +1,11 @@
+.container{
+    padding: 0 6rem;
+
+    @include respond(phone) {
+        padding: 0 .5rem;
+    }
+}
+
 h1 {
     font-size: $default-heading-size;
     color: $color-white;
@@ -13,11 +21,4 @@ h3 {
     font-size: $medium-heading-size;
     color: $color-white;
     font-weight: $medium-font-weight;
-}
-.container{
-    padding: 0 6rem;
-
-    @include respond(phone) {
-        padding: 0 .5rem;
-    }
 }
