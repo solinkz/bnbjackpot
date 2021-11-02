@@ -6,4 +6,6 @@
   box-sizing: border-box; }
 
 body {
-  background: #111; }
+  background: #111;
+  font-family: 'Poppins', sans-serif;
+  color: #fff; }
