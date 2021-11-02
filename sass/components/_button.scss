@@ -1,22 +1,30 @@
 .btn {
+    border-radius: 16px;
+    border: 1px solid $color-gold;
+    background: $color-gold;
+    color: $color-btn;
+    font-size: $default-font-size;
+    font-weight: $big-font-weight;
 
     &__nav {
-        border-radius: 16px;
-        border: 1px solid $color-gold;
-        background: $color-gold;
         padding: 1.2rem 2.5rem;
-        color: $color-btn;
-        font-size: $default-font-size;
-        font-weight: $big-font-weight;
     }
 
     &__medium {
-        border-radius: 16px;
-        border: 1px solid $color-gold;
-        background: $color-gold;
         padding: 1.5rem 4.0rem;
-        color: $color-btn;
-        font-size: $default-font-size;
-        font-weight: $big-font-weight;
+    }
+
+    &__bit {
+        padding: 0.4rem 0.8rem;
+    }
+
+    &__small {
+        padding: 1.2rem 2.5rem;
+    }
+
+    &__white {
+        background: $color-white;
+        padding: 1.5rem 4.0rem;
+        border: 1px solid $color-white;
     }
 }

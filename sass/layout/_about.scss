@@ -1,3 +1,29 @@
 .about {
     background: $second-background;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30rem;
+        
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__text p {
+        width: 45rem;
+        line-height: 2rem;
+        color: $paragraph-color;
+        font-size: $default-font-size;
+    }
+}
+
+.p {
+    color: $color-gold;
+    font-size: $default-font-size;
 }
