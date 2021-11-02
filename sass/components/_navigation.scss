@@ -1,0 +1,25 @@
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 3em 1em;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+.logo {
+    flex: 0.9;
+}
+
+.logo img {
+
+    @include respond(phone) {
+        height: 1.2rem;
+    }
+}

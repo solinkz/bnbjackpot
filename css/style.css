@@ -1,3 +1,19 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]   is where our normal styles apply
+1800px + :      Big desktop
+*/
+/*
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -5,7 +21,107 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 body {
-  background: #111;
-  font-family: 'Poppins', sans-serif;
-  color: #fff; }
+  font-family: 'Poppins', sans-serif; }
+
+h1 {
+  font-size: 5.5rem;
+  color: #fff;
+  font-weight: 400;
+  margin: 0 auto; }
+  @media (max-width: 37.5em) {
+    h1 {
+      font-size: 2.4rem; } }
+
+h3 {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 400; }
+
+.btn__nav {
+  border-radius: 16px;
+  border: 1px solid #FFD231;
+  background: #FFD231;
+  padding: 1.2rem 2.5rem;
+  color: #333333;
+  font-size: 1.4rem;
+  font-weight: 700; }
+
+.btn__medium {
+  border-radius: 16px;
+  border: 1px solid #FFD231;
+  background: #FFD231;
+  padding: 1.5rem 4.0rem;
+  color: #333333;
+  font-size: 1.4rem;
+  font-weight: 700; }
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none; }
+
+header nav ul li {
+  padding: 3em 1em; }
+
+header nav ul li a {
+  text-decoration: none; }
+
+.logo {
+  flex: 0.9; }
+
+@media (max-width: 37.5em) {
+  .logo img {
+    height: 1.2rem; } }
+
+.briefing {
+  text-align: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .briefing__content {
+    display: flex;
+    flex-direction: row;
+    position: relative; }
+  .briefing__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px; }
+    @media (max-width: 75em) {
+      .briefing__text {
+        font-size: 12px; } }
+  .briefing__text p {
+    font-size: 1.8rem;
+    color: #fff; }
+    @media (max-width: 56.25em) {
+      .briefing__text p {
+        font-size: 1.4rem; } }
+  .briefing__imga {
+    position: absolute;
+    top: -8rem;
+    left: -19.5rem; }
+    @media (max-width: 75em) {
+      .briefing__imga {
+        display: none; } }
+  .briefing__imgb {
+    position: absolute;
+    top: 20rem;
+    right: -15rem; }
+    @media (max-width: 75em) {
+      .briefing__imgb {
+        display: none; } }
+
+.development {
+  height: 40vh;
+  background: #14181D; }
+
+.header {
+  background-image: url(../img/homebg.png);
+  height: 90vh; }

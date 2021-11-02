@@ -1,0 +1,55 @@
+.briefing {
+    text-align: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+        @include respond(tab-land) {
+            font-size: 12px;
+        }
+    }
+
+    &__text p {
+        font-size: $paragraph-secondary-size;
+        color: $color-white;
+
+        @include respond(tab-port) {
+            font-size: $default-font-size;
+        }
+    }
+
+    &__imga {
+        position: absolute;
+        top: -8rem;
+        left: -19.5rem;
+
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+
+    &__imgb {
+        position: absolute;
+        top: 20rem;
+        right: -15rem;
+
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+}
