@@ -25,7 +25,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  background: #111111; }
 
 .container {
   padding: 0 6rem; }
@@ -82,7 +83,7 @@ header nav ul li a {
     height: 1.2rem; } }
 
 .about {
-  background: #14181D; }
+  background: #111111; }
 
 .briefing {
   text-align: center;
