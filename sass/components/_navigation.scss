@@ -1,6 +1,6 @@
 header nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
 }
@@ -11,10 +11,6 @@ header nav ul li {
 
 header nav ul li a{
     text-decoration: none;
-}
-
-.logo {
-    flex: 0.9;
 }
 
 .logo img {
