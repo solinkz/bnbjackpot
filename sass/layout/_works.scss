@@ -1,0 +1,44 @@
+.works {
+    height: 100vh;
+    background: $first-background;
+    display: flex;
+    align-items: center;
+    font-size: $paragraph-primary-size;
+    color: $paragraph-color;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 11rem;
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__briefing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    &__context {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__texts {
+        border: 1px solid $default-border;
+        padding: 0.3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__texts p {
+        width: 350px;
+    }
+}

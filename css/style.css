@@ -224,3 +224,35 @@ header nav ul li a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 85vh; }
+
+.works {
+  height: 100vh;
+  background: #14181D;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #8D8D8D; }
+  .works__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11rem; }
+  .works__heading {
+    text-align: center; }
+  .works__briefing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem; }
+  .works__context {
+    display: flex;
+    flex-direction: row; }
+  .works__texts {
+    border: 1px solid #282828;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; }
+  .works__texts p {
+    width: 350px; }
