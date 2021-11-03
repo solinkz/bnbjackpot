@@ -1,18 +1,42 @@
 .about {
     background: $second-background;
+    height: 90vh;
+
+    @include respond(tab-port) {
+        height: 105vh;
+    }
 
     &__content {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 30rem;
+        justify-content: space-between;
+        padding: 5rem 0rem;
+
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
         
+    }
+
+    &__img img {
+        @include respond(tab-port) {
+            width: 25rem;
+        }
     }
 
     &__text {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
     }
 
     &__text p {
@@ -20,6 +44,12 @@
         line-height: 2rem;
         color: $paragraph-color;
         font-size: $default-font-size;
+
+        @include respond(tab-port) {
+            width: 30rem;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 }
 
