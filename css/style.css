@@ -366,6 +366,48 @@ header nav ul li a {
   .development__img {
     justify-content: center; }
 
+.footer {
+  background: #111111;
+  color: #8D8D8D;
+  font-size: 1.4rem;
+  list-style: none;
+  text-decoration: none; }
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+  .footer__content li a {
+    color: #8D8D8D; }
+  .footer__link {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem; }
+    @media (max-width: 56.25em) {
+      .footer__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+  .footer__partners {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem; }
+    @media (max-width: 56.25em) {
+      .footer__partners {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+  .footer__extra {
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 56.25em) {
+      .footer__extra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+
 .header {
   background-image: url(../img/homebg.png);
   background-repeat: no-repeat;
