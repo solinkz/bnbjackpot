@@ -81,6 +81,14 @@ h5 {
     h5 {
       font-size: 300; } }
 
+h6 {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 300; }
+  @media (max-width: 37.5em) {
+    h6 {
+      font-size: 300; } }
+
 a {
   text-decoration: none; }
 
@@ -222,6 +230,26 @@ h1 {
     background: #fff;
     padding: 1.5rem 4.0rem;
     border: 0.1rem solid #fff; }
+  .btn__dark-gold {
+    background: #FFD231;
+    padding: 0.7rem 0.7rem;
+    border: 0.1rem solid #FFD231;
+    border-radius: 0.1rem; }
+  .btn__light-gold {
+    background: #443605;
+    padding: 0.7rem 0.7rem;
+    border: 0.1rem solid #443605;
+    border-radius: 0.1rem; }
+  .btn__lighter-gold {
+    background: #8B6D03;
+    padding: 0.7rem 0.7rem;
+    border: 0.1rem solid #8B6D03;
+    border-radius: 0.1rem; }
+  .btn__solid-gold {
+    background: #C79B00;
+    padding: 0.7rem 0.7rem;
+    border: 0.1rem solid #C79B00;
+    border-radius: 0.1rem; }
 
 .btn:hover {
   transform: scale(1.02); }
@@ -346,6 +374,39 @@ h1 {
         font-size: 1.2rem;
         width: 300px;
         margin: 0 auto; } }
+
+.chart {
+  background: #14181D;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 2rem 2rem; }
+  .chart__img {
+    margin: 0 auto; }
+  .chart__content {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem; }
+  .chart__colored {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; }
+  .chart__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+  .chart__test {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 1rem; }
+
+.chart p {
+  color: #8D8D8D;
+  font-size: 1.4rem;
+  gap: 1rem; }
 
 .development {
   background: #14181D; }

@@ -29,6 +29,34 @@
         padding: 1.5rem 4.0rem;
         border: .1rem solid $color-white;
     }
+
+    &__dark-gold {
+        background: $color-gold;
+        padding: 0.7rem 0.7rem;
+        border: 0.1rem solid $color-gold;
+        border-radius: 0.1rem;
+    }
+
+    &__light-gold {
+        background: #443605;
+        padding: 0.7rem 0.7rem;
+        border: 0.1rem solid #443605;
+        border-radius: 0.1rem;
+    }
+
+    &__lighter-gold {
+        background: #8B6D03;
+        padding: 0.7rem 0.7rem;
+        border: 0.1rem solid #8B6D03;
+        border-radius: 0.1rem;
+    }
+
+    &__solid-gold {
+        background: #C79B00;
+        padding: 0.7rem 0.7rem;
+        border: 0.1rem solid #C79B00;
+        border-radius: 0.1rem;
+    }
 }
 
 .btn:hover {

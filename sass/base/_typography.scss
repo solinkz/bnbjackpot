@@ -46,6 +46,16 @@ h5 {
         font-size: $primary-font-weight;
     }
 }
+
+h6 {
+    font-size: $default-font-size;
+    color: $color-white;
+    font-weight: $primary-font-weight;
+
+    @include respond(phone) {
+        font-size: $primary-font-weight;
+    }
+}
 a{
     text-decoration: none;
 }
