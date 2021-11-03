@@ -9,6 +9,13 @@
 
     &__nav {
         padding: 1.2rem 2.5rem;
+
+        @include respond(phone) {
+            font-size: 0.9rem;
+            border-radius: 1.6rem;
+            width: 70%;
+            text-align: center;
+        }
     }
 
     &__medium {
@@ -61,4 +68,12 @@
 
 .btn:hover {
     transform: scale(1.02);
+}
+
+.notch {
+    @include respond(phone) {
+        padding: 0.1rem;
+        width: 2rem;
+        height: 2rem;
+    }
 }

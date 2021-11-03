@@ -22,6 +22,10 @@
         @include respond(tab-port) {
             flex-direction: column;
         }
+
+        @include respond(phone) {
+            padding: 6rem 2rem;
+        }
     }
 
     &__text {

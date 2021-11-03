@@ -64,6 +64,10 @@
      justify-content: center;
 }
 
+.j-around{
+     justify-content: space-around;
+}
+
 .j-content{
      justify-content: space-between;
 }
@@ -109,33 +113,14 @@
      line-height: 1.5;
 }
 
-.body{
-     background: #181E24;
-     padding-top: 10px;
-   }
-   
-   .wrapper, .wrapper2{
-     width:50%;
-     display:block;
-     overflow:hidden;
-     margin:0 auto;
-     padding: 60px 50px;
-     background:#fff;
-     border-radius:4px;
-     
-   }
-   
-   canvas{
-     background:#fff;
-     height:250px;
-   }
-   
-   h1{
-     font-family: Roboto;
-     color: #fff;
-     margin-top:50px;
-     font-weight:200;
-     text-align: center;
-     display: block;
-     text-decoration: none;
-   }
+.overflow-auto {
+     overflow: auto;
+}
+
+.my-3{
+     margin: 3rem 0;
+}
+
+.gap-2 {
+     gap: 2rem;
+}
