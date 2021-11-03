@@ -30,3 +30,7 @@
         border: .1rem solid $color-white;
     }
 }
+
+.btn:hover {
+    transform: scale(1.02);
+}

@@ -2,6 +2,7 @@
     background: $second-background;
     height: 90vh;
 
+
     @include respond(tab-land) {
         display: flex;
         flex-direction: column;
@@ -20,6 +21,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 5rem 0rem;
+        width: $default-width;
 
         @include respond(tab-land) {
             padding: 0;

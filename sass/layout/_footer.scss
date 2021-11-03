@@ -15,6 +15,10 @@
         color: $paragraph-color;
     }
 
+    &__content li a:hover {
+        color: $color-white;
+    }
+
     &__link {
         display: flex;
         flex-direction: row;
