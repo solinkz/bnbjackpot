@@ -557,6 +557,12 @@ header nav ul li a {
         text-align: center; } }
   .wallet_text {
     margin-bottom: 2.4rem; }
+  .wallet_img {
+    width: 20.8rem;
+    height: 21.54rem;
+    background-image: url(../img/envelope.png);
+    background-position: center;
+    background-size: cover; }
 
 .testimonials {
   background: #111111;
