@@ -1,23 +1,32 @@
 // font-size
 .text-xsm{
      font-size: $default-font-size;
+
+     @include respond(phone) {
+          font-size: $bit-font-size;
+      }  
 }
 .text-sm{
      font-size: $paragraph-primary-size;
+
+     @include respond(phone) {
+          font-size: $default-font-size;
+      }  
 }
 .text-md{
      font-size: $paragraph-secondary-size;
+     
+     @include respond(phone) {
+          font-size: $paragraph-primary-size;
+      }  
 }
-.text-lg{
-
-}
-.text-xlg{
-
-}  
 
 // color
 .gray{
      color: $color-gray;
+} 
+.gold{
+     color: $color-gold;
 } 
 .white{
      color: $color-white;
@@ -35,6 +44,40 @@
 .d-flex{
      display: flex;
 }
+.f-column{
+     flex-direction: column;
+}
 .j-content{
      justify-content: space-between;
+}
+.a-item{
+     align-items: center;
+}
+.text-center{
+     text-align: center;
+}
+.flex-gap{
+     gap: 3rem;
+}
+
+// border
+.border{
+     border: .1rem dashed $color-gray;
+     border-radius: .8rem;
+}
+
+// padding margin
+.border-p{
+     padding: 2.5rem;
+}
+.border-mt{
+     margin-top: 5rem;
+}
+.border-gap{
+     gap: 10rem;
+     
+     @include respond(tab-port) {
+          gap: 5rem;
+      }   
+
 }

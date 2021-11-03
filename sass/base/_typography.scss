@@ -13,24 +13,49 @@ h1 {
     margin: 0 auto;
 
     @include respond(phone) {
-        font-size: $medium-heading-size;
+        font-size: $primary-heading-size;
     }
 }
 h2{
     font-size: $default-primary-size;
     color: $color-white;
     font-weight: $medium-font-weight;
+
+    @include respond(phone) {
+        font-size: $primary-heading-size;
+    }
 }
  
 h3 {
     font-size: $primary-heading-size;
     color: $color-white;
     font-weight: $small-font-weight;
+
+    @include respond(phone) {
+        font-size: $medium-heading-size;
+    }
 }
 h4 {
     font-size: $medium-heading-size;
     color: $color-white;
     font-weight: $big-font-weight;
+
+    @include respond(phone) {
+        font-size: $paragraph-secondary-size;
+    }
+}
+
+h5 {
+    font-size: $small-heading-size;
+    color: $color-white;
+    font-weight: $primary-font-weight;
+
+    @include respond(phone) {
+        font-size: $primary-font-weight;
+    }
+}
+a{
+    text-decoration: none;
 }
 
 .container{

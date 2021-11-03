@@ -1,0 +1,20 @@
+.wallet{
+     background-color: $second-background;
+     padding: 10rem 0;
+
+     &_container{
+          display: flex;
+          justify-content: space-between;
+
+          @include respond(tab-port) {
+               flex-direction: column-reverse;
+               gap: 5rem;
+               align-items: center;
+               text-align: center;
+           }
+     }
+
+     &_text{
+          margin-bottom: 2.4rem;
+     }
+}
