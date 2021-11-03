@@ -2,8 +2,17 @@
     background: $second-background;
     height: 90vh;
 
-    @include respond(tab-port) {
-        height: 105vh;
+
+    @include respond(tab-land) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @include respond(phone) {
+        height: 150vh;
     }
 
     &__content {
@@ -12,19 +21,31 @@
         align-items: center;
         justify-content: space-between;
         padding: 5rem 0rem;
+        width: $default-width;
 
+        @include respond(tab-land) {
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 2rem;
+        }
         @include respond(tab-port) {
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
+            gap: 2rem;
         }
         
     }
 
     &__img img {
-        @include respond(tab-port) {
+        @include respond(tab-land) {
             width: 25rem;
         }
     }
@@ -34,7 +55,7 @@
         flex-direction: column;
         gap: 1.5rem;
 
-        @include respond(tab-port) {
+        @include respond(tab-land) {
             text-align: center;
         }
     }
@@ -45,7 +66,7 @@
         color: $paragraph-color;
         font-size: $default-font-size;
 
-        @include respond(tab-port) {
+        @include respond(tab-land) {
             width: 30rem;
             margin: 0 auto;
             text-align: center;

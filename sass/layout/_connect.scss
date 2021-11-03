@@ -1,0 +1,38 @@
+.connect {
+    background: $second-background;
+    padding: 6rem;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
+    }
+
+    &__text p{
+        color: $paragraph-color;
+        width: 550px;
+        font-size: $default-font-size;
+
+        @include respond(tab-port) {
+            font-size: $bit-font-size;
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
+}

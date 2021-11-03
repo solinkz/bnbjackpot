@@ -13,8 +13,8 @@ h1 {
     font-weight: $medium-font-weight;
     margin: 0 auto;
 
-    @include respond(phone) {  
-        font-size: $default-primary-size;
+    @include respond(phone) {
+        font-size: $primary-heading-size;
     }
 }
 h2{
@@ -42,7 +42,17 @@ h4 {
     font-weight: $big-font-weight;
 
     @include respond(phone) {
-        font-size: $small-heading-size;
+        font-size: $paragraph-secondary-size;
+    }
+}
+
+h5 {
+    font-size: $small-heading-size;
+    color: $color-white;
+    font-weight: $primary-font-weight;
+
+    @include respond(phone) {
+        font-size: $primary-font-weight;
     }
 }
 a{
