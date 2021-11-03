@@ -75,6 +75,9 @@ h5 {
 a {
   text-decoration: none; }
 
+ul {
+  padding: 2rem 0; }
+
 .container {
   position: relative;
   width: 124rem;
@@ -440,6 +443,16 @@ header nav ul li a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 85vh; }
+
+.winning {
+  background-color: #111111; }
+  .winning_container {
+    gap: 15rem; }
+  @media (max-width: 56.25em) {
+    .winning_criteria {
+      flex-direction: column; } }
+  .winning_list {
+    padding-left: 1.8rem; }
 
 .works {
   background: #14181D;
