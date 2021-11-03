@@ -1,8 +1,9 @@
 .works {
-    height: 100vh;
+    padding: 5rem;
     background: $first-background;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: $paragraph-primary-size;
     color: $paragraph-color;
 
@@ -12,6 +13,13 @@
         justify-content: center;
         align-items: center;
         gap: 11rem;
+
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &__heading {
@@ -22,23 +30,43 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 1rem;
+        align-items: center;
+        gap: 5rem;
     }
 
     &__context {
         display: flex;
         flex-direction: row;
+        gap: 2rem;
+
+        @include respond(tab-land) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
     }
 
     &__texts {
         border: 1px solid $default-border;
-        padding: 0.3rem;
+        padding: 2rem;
+        padding-bottom: 6rem;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        border-radius: 0.3rem;
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
     }
 
     &__texts p {
-        width: 350px;
+        width: 35rem;
+        font-size: $default-font-size;
+
+        @include respond(tab-port) {
+           width: 20rem;
+        }
     }
 }

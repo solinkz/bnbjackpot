@@ -1,0 +1,40 @@
+// font-size
+.text-xsm{
+     font-size: $default-font-size;
+}
+.text-sm{
+     font-size: $paragraph-primary-size;
+}
+.text-md{
+     font-size: $paragraph-secondary-size;
+}
+.text-lg{
+
+}
+.text-xlg{
+
+}  
+
+// color
+.gray{
+     color: $color-gray;
+} 
+.white{
+     color: $color-white;
+}
+
+// font-weight
+.fw-sm{
+     font-weight: $medium-font-weight;
+}
+.fw-md{
+     font-weight: $small-font-weight;
+}
+
+// flex
+.d-flex{
+     display: flex;
+}
+.j-content{
+     justify-content: space-between;
+}

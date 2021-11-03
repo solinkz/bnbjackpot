@@ -6,23 +6,26 @@
     justify-content: center;
 
     @include respond(tab-port) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 170vh;
-    }   
+        height: 100vh;
+    }
 
+    @include respond(phone) {
+        height: 150vh;
+    }
+ 
     &__content {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 15rem;
+        gap: 14rem;
 
         @include respond(tab-port) {
             display: flex;
             flex-direction: column;
-            height: 100vh;
-        }    
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
     }
 
     &__briefing {
@@ -31,6 +34,14 @@
         align-items: center;
         justify-content: center;
         gap: 2rem;
+
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
     }
 
     &__text {
@@ -43,18 +54,8 @@
         color: $paragraph-color;
         font-size: $paragraph-primary-size;
     }
-}
 
-.b {
-    @include respond(tab-port) {
-        position: relative;
-        left: 0.8rem;
-    }   
-}
-
-.c {
-    @include respond(tab-port) {
-        position: relative;
-        right: 3.4rem;
-    }  
+    &__img {
+        justify-content: center;
+    }
 }
