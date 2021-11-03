@@ -5,16 +5,18 @@
      &_container{
           display: flex;
           justify-content: space-between;
-
+          gap: 4rem;
           @include respond(tab-port) {
                flex-direction: column-reverse;
                gap: 5rem;
-               align-items: center;
-               text-align: center;
+               // align-items: center;
+               // text-align: center;
            }
+
      }
 
      &_text{
-          margin-bottom: 2.4rem;
+          padding: 3rem 0;
      }
+
 }

@@ -135,6 +135,9 @@ ul {
 .f-column {
   flex-direction: column; }
 
+.j-center {
+  justify-content: center; }
+
 .j-content {
   justify-content: space-between; }
 
@@ -430,9 +433,10 @@ h1 {
   background-color: #111111; }
   .winning_container {
     gap: 15rem; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .winning_criteria {
-      flex-direction: column; } }
+      flex-direction: column;
+      gap: 8rem; } }
   .winning_list {
     padding-left: 1.8rem; }
 
@@ -517,15 +521,14 @@ h1 {
   background-color: #111111; }
   .wallet_container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    gap: 4rem; }
     @media (max-width: 56.25em) {
       .wallet_container {
         flex-direction: column-reverse;
-        gap: 5rem;
-        align-items: center;
-        text-align: center; } }
+        gap: 5rem; } }
   .wallet_text {
-    margin-bottom: 2.4rem; }
+    padding: 3rem 0; }
 
 .testimonials {
   background: #111111;
@@ -566,7 +569,7 @@ h1 {
       padding: 8rem 0; } }
   .ticket_row {
     flex-direction: row; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 75em) {
       .ticket_row {
         flex-direction: column;
         gap: 4rem;
@@ -577,9 +580,19 @@ h1 {
         margin: 0 auto; } }
   .ticket_time {
     display: flex;
-    text-align: center;
+    justify-content: center;
     gap: 3.2rem;
     margin: 2.1rem 0; }
+  @media (max-width: 75em) {
+    .ticket_box {
+      width: 100%; } }
+  @media (max-width: 37.5em) {
+    .ticket_box {
+      width: 50rem; } }
+  @media (max-width: 75em) {
+    .ticket_box_prize {
+      flex-direction: column;
+      justify-content: start; } }
   .ticket_line {
     height: 8.5rem;
     width: .1rem;

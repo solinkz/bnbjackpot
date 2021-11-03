@@ -9,7 +9,7 @@
      &_row{
           flex-direction: row;
 
-          @include respond(tab-port) {
+          @include respond(tab-land) {
                flex-direction: column;
                gap: 4rem;
                width: 100%;
@@ -22,16 +22,26 @@
      }
      &_time{
           display: flex;
-          text-align: center;
+          justify-content: center;
           gap: 3.2rem;
           margin: 2.1rem 0;
      }
-     // &_box{  
+     &_box{  
           
-     //      // @include respond(tab-port) {
-     //      //      width: 20rem;
-     //      //  }
-     // }
+          @include respond(tab-land) {
+               width: 100%;
+           }
+           @include respond(phone) {
+               width: 50rem;
+           }
+
+           &_prize{
+               @include respond(tab-land) {
+                    flex-direction: column;
+                    justify-content: start;
+                }
+           }
+     }
      &_line{
           height: 8.5rem;
           width: .1rem;
