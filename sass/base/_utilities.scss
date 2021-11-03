@@ -20,6 +20,15 @@
           font-size: $paragraph-primary-size;
       }  
 }
+.text-lg{
+     font-size: $medium-heading-size;
+     
+     @include respond(phone) {
+          font-size: $paragraph-secondary-size;
+      }  
+}
+
+
 
 // color
 .gray{
@@ -27,6 +36,9 @@
 } 
 .gold{
      color: $color-gold;
+} 
+.red{
+     color: $color-red;
 } 
 .white{
      color: $color-white;
@@ -59,6 +71,13 @@
 .flex-gap{
      gap: 3rem;
 }
+.gap{
+     gap: 6rem;
+
+     @include respond(tab-port) {
+          gap: 4rem;
+      }  
+}
 
 // border
 .border{
@@ -80,4 +99,7 @@
           gap: 5rem;
       }   
 
+}
+.l_height{
+     line-height: 1.5;
 }

@@ -1,10 +1,11 @@
 .container{
     padding: 0 6rem;
 
-    @include respond(phone) {
-        padding: 0 .5rem;
+    @include respond(tab-port) {
+        padding: 0 3rem;
     }
-}
+    
+}  
 
 h1 {
     font-size: $default-heading-size;
@@ -12,7 +13,7 @@ h1 {
     font-weight: $medium-font-weight;
     margin: 0 auto;
 
-    @include respond(phone) {
+    @include respond(phone) {  
         font-size: $default-primary-size;
     }
 }
