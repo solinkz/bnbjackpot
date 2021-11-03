@@ -64,6 +64,10 @@
      justify-content: center;
 }
 
+.j-around{
+     justify-content: space-around;
+}
+
 .j-content{
      justify-content: space-between;
 }
@@ -107,4 +111,16 @@
 }
 .l_height{
      line-height: 1.5;
+}
+
+.overflow-auto {
+     overflow: auto;
+}
+
+.my-3{
+     margin: 3rem 0;
+}
+
+.gap-2 {
+     gap: 2rem;
 }
