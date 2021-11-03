@@ -1,6 +1,6 @@
 .ticket{
      background-color: $first-background; 
-     padding: 15rem 0;
+     // padding: 15rem 0;
 
      @include respond(tab-port) {
           padding: 8rem 0;

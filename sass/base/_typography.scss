@@ -1,12 +1,3 @@
-.container{
-    padding: 0 6rem;
-
-    @include respond(tab-port) {
-        padding: 0 3rem;
-    }
-    
-}  
-
 h1 {
     font-size: $default-heading-size;
     color: $color-white;
@@ -60,11 +51,9 @@ a{
 }
 
 .container{
-    padding: 0 6rem;
-
-    @include respond(phone) {
-        padding: 0 .5rem;
-    }
+    position: relative;
+    width: 124rem;
+    margin: 0 auto;
 }
 
 .contain{
