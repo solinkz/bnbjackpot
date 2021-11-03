@@ -1,47 +1,23 @@
 .development {
-    height: 40vh;
     background: $first-background;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @include respond(tab-port) {
-        height: 100vh;
-    }
-
-    @include respond(phone) {
-        height: 150vh;
-    }
  
     &__content {
         display: flex;
-        flex-direction: row;
         align-items: center;
-        gap: 14rem;
+        justify-content: space-between;
+        width: 75%;
+        margin: 0 auto;
+        gap: 3rem;
 
-        @include respond(tab-port) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+        @include respond(tab-land) {
+            flex-wrap: wrap;
         }
     }
 
     &__briefing {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        align-content: center;
         gap: 2rem;
-
-        @include respond(tab-port) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
     }
 
     &__text {

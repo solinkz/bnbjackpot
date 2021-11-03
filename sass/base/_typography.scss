@@ -50,17 +50,8 @@ a{
     text-decoration: none;
 }
 
-.container{
-    position: relative;
-    width: 124rem;
-    margin: 0 auto;
+ul{
+    // list-style: none;
+    padding: 2rem 0;
 }
 
-.contain{
-    padding: 0rem 8rem;
-    margin: 0 auto;
-
-    @include respond(phone) {
-        padding: 0 .5rem;
-    }
-}
