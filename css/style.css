@@ -301,8 +301,7 @@ header nav ul li a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    width: 110rem; }
+    align-items: center; }
     @media (max-width: 56.25em) {
       .connect__content {
         flex-direction: column;
