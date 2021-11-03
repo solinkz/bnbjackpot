@@ -9,16 +9,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // gap: 30.2rem;
         padding: 6rem 8rem;
+        gap: 6rem;
 
         @include respond(tab-port) {
-            display: flex;
             flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            gap: 2rem;
-            padding: 1.5rem;
         }
     }
 
@@ -31,12 +26,10 @@
     &__text p {
         font-size: $default-font-size;
         color: $paragraph-color;
-        width: 75rem;
+        width: 70%;
 
         @include respond(tab-land) {
-            width: 27rem;
-            text-align: center;
-            margin: 0 auto;
+            width: 100%;
         }
     }
 }

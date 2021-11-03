@@ -1,21 +1,14 @@
-header nav ul {
+.nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
+    align-content: center;
+    padding: 2.5rem 0;
 
-header nav ul li {
-    padding: 3em 1em;
-}
-
-header nav ul li a{
-    text-decoration: none;
-}
-
-.logo img {
-
-    @include respond(phone) {
-        height: 1.2rem;
+    & .logo {
+        & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
