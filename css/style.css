@@ -27,15 +27,9 @@ html {
 body {
   font-family: 'Poppins', sans-serif; }
 
-.cont {
-  width: 120rem;
-  margin: 0 auto; }
-
-.container {
-  padding: 0 6rem; }
-  @media (max-width: 56.25em) {
-    .container {
-      padding: 0 3rem; } }
+section,
+footer {
+  padding: 10rem 0; }
 
 h1 {
   font-size: 5.5rem;
@@ -82,10 +76,9 @@ a {
   text-decoration: none; }
 
 .container {
-  padding: 0 6rem; }
-  @media (max-width: 37.5em) {
-    .container {
-      padding: 0 .5rem; } }
+  position: relative;
+  width: 124rem;
+  margin: 0 auto; }
 
 .text-xsm {
   font-size: 1.4rem; }
@@ -318,8 +311,7 @@ header nav ul li a {
         display: none; } }
 
 .connect {
-  background: #111111;
-  padding: 6rem; }
+  background: #111111; }
   .connect__content {
     display: flex;
     flex-direction: row;
@@ -450,7 +442,6 @@ header nav ul li a {
   height: 85vh; }
 
 .works {
-  padding: 5rem;
   background: #14181D;
   display: flex;
   align-items: center;
@@ -506,7 +497,6 @@ header nav ul li a {
         width: 20rem; } }
 
 .history {
-  padding: 10rem 0;
   background-color: #14181D; }
   .history_container {
     width: 70rem;
@@ -542,8 +532,7 @@ header nav ul li a {
       font-weight: 700; }
 
 .wallet {
-  background-color: #111111;
-  padding: 10rem 0; }
+  background-color: #111111; }
   .wallet_container {
     display: flex;
     justify-content: space-between; }
@@ -557,18 +546,14 @@ header nav ul li a {
     margin-bottom: 2.4rem; }
 
 .testimonials {
-  padding: 7rem;
   background: #111111;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  margin-bottom: 15rem; }
   .testimonials__content {
     background: #1B1F21;
     display: flex;
     align-items: center;
-    gap: 30.2rem;
-    flex-direction: row;
-    padding: 3.5rem; }
+    justify-content: space-between;
+    padding: 6rem 8rem; }
     @media (max-width: 56.25em) {
       .testimonials__content {
         display: flex;
@@ -592,8 +577,7 @@ header nav ul li a {
         margin: 0 auto; } }
 
 .ticket {
-  background-color: #14181D;
-  padding: 15rem 0; }
+  background-color: #14181D; }
   @media (max-width: 56.25em) {
     .ticket {
       padding: 8rem 0; } }
