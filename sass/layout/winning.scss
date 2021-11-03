@@ -6,8 +6,9 @@
      }
 
      &_criteria{
-          @include respond(tab-port) {
+          @include respond(tab-land) {
                flex-direction: column;
+               gap: 8rem;
            }
      }
 
