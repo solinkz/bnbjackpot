@@ -66,3 +66,12 @@ a{
         padding: 0 .5rem;
     }
 }
+
+.contain{
+    padding: 0rem 8rem;
+    margin: 0 auto;
+
+    @include respond(phone) {
+        padding: 0 .5rem;
+    }
+}
