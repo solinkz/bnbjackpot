@@ -1,0 +1,41 @@
+.ticket{
+     background-color: $first-background; 
+     padding: 15rem 0;
+
+     @include respond(tab-port) {
+          padding: 8rem 0;
+      }   
+
+     &_row{
+          flex-direction: row;
+
+          @include respond(tab-port) {
+               flex-direction: column;
+               gap: 4rem;
+               width: 100%;
+               // margin: 0 auto;
+           }   
+          @include respond(phone) {
+               width: 50rem;
+               margin: 0 auto;
+           }   
+     }
+     &_time{
+          display: flex;
+          text-align: center;
+          gap: 3.2rem;
+          margin: 2.1rem 0;
+     }
+     // &_box{  
+          
+     //      // @include respond(tab-port) {
+     //      //      width: 20rem;
+     //      //  }
+     // }
+     &_line{
+          height: 8.5rem;
+          width: .1rem;
+          background-color: $color-gray;   
+          margin: 0 4rem 0 6.7rem;
+     }
+}

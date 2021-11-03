@@ -1,0 +1,105 @@
+// font-size
+.text-xsm{
+     font-size: $default-font-size;
+
+     @include respond(phone) {
+          font-size: $bit-font-size;
+      }  
+}
+.text-sm{
+     font-size: $paragraph-primary-size;
+
+     @include respond(phone) {
+          font-size: $default-font-size;
+      }  
+}
+.text-md{
+     font-size: $paragraph-secondary-size;
+     
+     @include respond(phone) {
+          font-size: $paragraph-primary-size;
+      }  
+}
+.text-lg{
+     font-size: $medium-heading-size;
+     
+     @include respond(phone) {
+          font-size: $paragraph-secondary-size;
+      }  
+}
+
+
+
+// color
+.gray{
+     color: $color-gray;
+} 
+.gold{
+     color: $color-gold;
+} 
+.red{
+     color: $color-red;
+} 
+.white{
+     color: $color-white;
+}
+
+// font-weight
+.fw-sm{
+     font-weight: $medium-font-weight;
+}
+.fw-md{
+     font-weight: $small-font-weight;
+}
+
+// flex
+.d-flex{
+     display: flex;
+}
+.f-column{
+     flex-direction: column;
+}
+.j-content{
+     justify-content: space-between;
+}
+.a-item{
+     align-items: center;
+}
+.text-center{
+     text-align: center;
+}
+.flex-gap{
+     gap: 3rem;
+}
+.gap{
+     gap: 6rem;
+
+     @include respond(tab-port) {
+          gap: 4rem;
+      }  
+}
+
+// border
+.border{
+     border: .1rem dashed $color-gray;
+     border-radius: .8rem;
+}
+
+// padding margin
+.border-p{
+     padding: 2.5rem;
+}
+.border-mt{
+     margin-top: 5rem;
+}
+.border-gap{
+     gap: 10rem;
+     
+     @include respond(tab-port) {
+          gap: 5rem;
+      }   
+
+}
+.l_height{
+     line-height: 1.5;
+}

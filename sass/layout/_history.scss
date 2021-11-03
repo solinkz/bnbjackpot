@@ -1,0 +1,52 @@
+.history{
+     padding: 10rem 0;
+     background-color: $first-background; 
+
+     &_container{
+          width: 70rem;
+          margin: 0 auto;
+          line-height: 4rem;
+
+          @include respond(tab-port) {
+               width: 100%;
+               line-height: 4rem;
+           }
+          @include respond(phone) {
+               width: 50rem;
+               line-height: 4rem;
+           }
+     }
+     &_link{
+          display: flex;
+          justify-content: center;
+          gap: 4.7rem;
+          line-height: 4rem;
+     }
+     &_winning_number{
+          @include respond(tab-port) {
+               display: flex;
+               flex-direction: column;
+           }
+     }
+     &_list{
+          display: flex;
+          align-items: center;
+          text-align: center;
+          gap: 2.2rem;
+
+          &_number{
+               width: 4rem;
+               height: 4rem;
+               border-radius: 50%;
+               background-color: $color-white;
+               font-weight: $big-font-weight;
+          }
+     }
+}
+// .border_gold{
+//      border-bottom: 1px solid $color-gold; 
+// }
+
+// .border_gray{
+//      border-bottom: 1px solid $color-gray;
+// }

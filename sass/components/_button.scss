@@ -1,10 +1,11 @@
 .btn {
-    border-radius: 16px;
-    border: 1px solid $color-gold;
+    border-radius: 1.6rem;
+    border: .1rem solid $color-gold;
     background: $color-gold;
     color: $color-btn;
     font-size: $default-font-size;
     font-weight: $big-font-weight;
+    cursor: pointer;
 
     &__nav {
         padding: 1.2rem 2.5rem;
@@ -20,11 +21,16 @@
 
     &__small {
         padding: 1.2rem 2.5rem;
+        border-radius: 1.8rem;
     }
 
     &__white {
         background: $color-white;
         padding: 1.5rem 4.0rem;
-        border: 1px solid $color-white;
+        border: .1rem solid $color-white;
     }
+}
+
+.btn:hover {
+    transform: scale(1.02);
 }
