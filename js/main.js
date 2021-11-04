@@ -10,14 +10,12 @@ window.addEventListener('load', (e)=>{
 
             if(modal){
                 const close = modal.querySelector('.close');
-                const overlay = modal.querySelector('.overlay');
                 
                 btns.forEach( btn => {
                     this.addEvent(btn, this.add , modal);
                 })
 
                 this.addEvent(close, this.remove , modal);
-                this.addEvent(overlay, this.remove , modal);
             }
 
         }
