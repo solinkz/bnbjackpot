@@ -124,3 +124,14 @@
 .gap-2 {
      gap: 2rem;
 }
+
+.w-full {
+     width: 100%;
+}
+
+.lead {
+     font-size: $paragraph-primary-size;
+     font-weight: $medium-font-weight;
+     color: $color-white
+}
+

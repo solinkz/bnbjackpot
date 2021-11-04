@@ -46,6 +46,14 @@ h5 {
         font-size: $primary-font-weight;
     }
 }
+
+h6,
+.h6 {
+    font-size: $paragraph-secondary-size;
+    color: $color-white;
+    font-weight: $small-font-weight;
+}
+
 a{
     text-decoration: none;
 }
