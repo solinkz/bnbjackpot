@@ -45,6 +45,11 @@
         align-items: center;
         margin-bottom: 5rem;
 
+        h6{
+            font-size: $paragraph-secondary-size;
+            font-weight: $small-font-weight;
+        }
+
         & .close{
             cursor: pointer;
 

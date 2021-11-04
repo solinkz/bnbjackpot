@@ -47,11 +47,15 @@ h5 {
     }
 }
 
-h6,
-.h6 {
-    font-size: $paragraph-secondary-size;
+
+h6 {
+    font-size: $default-font-size;
     color: $color-white;
-    font-weight: $small-font-weight;
+    font-weight: $primary-font-weight;
+
+    @include respond(phone) {
+        font-size: $primary-font-weight;
+    }
 }
 
 a{
