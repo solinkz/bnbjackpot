@@ -149,6 +149,7 @@
         z-index:-1;
         opacity:0;
         animation: hide .25s;
+        visibility: hidden;
       
         transform: scale(0);
     }
@@ -169,6 +170,7 @@
         opacity:1;
         z-index:2;
         animation: show .2s;
+        visibility: visible;
       
         transform: scale(1);
     }

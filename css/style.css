@@ -262,6 +262,31 @@ ul {
     width: 2rem;
     height: 2rem; } }
 
+.form {
+  margin: 0 auto; }
+  .form__child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; }
+  .form__control {
+    display: block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px; }
+    .form__control:focus {
+      border-color: #66afe9;
+      outline: 0; }
+  .form__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; }
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -371,6 +396,7 @@ ul {
     z-index: -1;
     opacity: 0;
     animation: hide .25s;
+    visibility: hidden;
     transform: scale(0); }
 
 @keyframes hide {
@@ -386,6 +412,7 @@ ul {
     opacity: 1;
     z-index: 2;
     animation: show .2s;
+    visibility: visible;
     transform: scale(1); }
 
 @keyframes show {
