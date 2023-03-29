@@ -263,7 +263,7 @@ ul {
     height: 2rem; } }
 
 .form {
-  margin: 0 auto; }
+  padding: 95px; }
   .form__child {
     display: flex;
     flex-direction: column;
